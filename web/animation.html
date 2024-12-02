@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('../image/暗1.jpg'); 
+            background-size: cover;
+            background-position: center; 
+            background-attachment: fixed; 
+            font-family: Arial, sans-serif; 
+            min-height: 100vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute; 
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: space-between;
+            position: relative; 
+            z-index: 1;
+            max-width: 1200px; 
+            width: 100%;
+        }
+
+        .block {
+            width: 30%; 
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .block img {
+            width: 100%;         
+            height: auto;        
+            border-radius: 8px;
+            margin-bottom: 15px; 
+        }
+
+        .block:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+
+        .block h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .block p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+
+    <button class="back-button" onclick="goBack()">返回</button>
+
+    <div class="container">
+        <div class="block">
+            <img src="../image/我心危.jpg" alt="图片 1">
+            <h2>我心危</h2>
+            <p>不成熟的二人在走向成熟</p>
+        </div>
+        <div class="block">
+            <img src="../image/Lycoris.jpg" alt="图片 2">
+            <img src="../image/Lycoris2.jpg" alt="图片 2">
+            <h2>Lycoris</h2>
+            <p>纯真，坦率 vs 顾虑，傲娇</p>
+        </div>
+        <div class="block">
+            <img src="../image/狼辛.jpg" alt="图片 3">
+            <h2>狼辛</h2>
+            <p>没错！ぬしの馬鹿野郎！我愿称狼辛为年度最佳。商人遇到贤狼，二者的旅途仅仅是行商吗？</p>
+        </div>
+        <div class="block">
+            <img src="../image/辉夜.jpg" alt="图片 4">
+            <img src="../image/辉夜2.jpg" alt="图片 4">
+            <h2>辉夜大小姐</h2>
+            <p>没错！双傲娇！两个天才的恋爱头脑战！谁先告白谁就输了？</p>
+        </div>
+        <div class="block">
+            <img src="../image/蕾娜.jpg" alt="图片 5">
+            <h2>86</h2>
+            <p>蕾娜：喂，快去看86！</p>
+        </div>
+        <div class="block">
+            <img src="../image/咒回.jpg" alt="图片 6">
+            <img src="../image/咒回2.jpg" alt="图片 6">
+            <h2>咒回</h2>
+            <p>此处为咒回0篇，全剧最帅乙骨忧太与其青梅里香的封神之战！</p>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
