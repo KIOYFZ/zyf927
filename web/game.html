@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/image/光1.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif; 
+    min-height: 100vh; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    position: relative; 
+    z-index: 1;
+    margin-right: 150px; 
+}
+
+.block {
+    width: 48%; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.block img {
+    width: 100%;         
+    height: auto;       
+    border-radius: 8px;
+    margin-bottom: 15px; 
+}
+
+.block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.block h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.block p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#nav-vertical {
+            position: absolute;
+            top: 40px;
+            right: 10px;
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: rgb(242, 243, 244);
+            box-shadow: 20px 40px 40px #cbcaca;
+            border-radius: 10px;
+            padding: 10px;
+            z-index: 10; 
+        }
+
+
+        #nav-vertical li {
+            margin-bottom: 15px; 
+        }
+
+        #nav-vertical li a {
+            padding: 15px 30px;
+            font: 500 24px 'STHupo', sans-serif;
+            color: rgb(70, 100, 180);
+            text-decoration: none;
+            display: inline-block;
+            border: none;
+            outline: none;
+            position: relative;
+            z-index: 3;
+            transition: background-color 0.3s ease;
+        }
+
+        #nav-vertical li a:hover {
+            background-color: rgba(70, 100, 180, 0.1);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <img src="/image/奥奇.png" alt="图片 1">
+            <h2>奥奇传说</h2>
+            <p>嗯，没错，童年！</p>
+        </div>
+        <div class="block">
+            <img src="/image/PUBG.png" alt="图片 2">
+            <h2>PUBG</h2>
+            <p></p>
+        </div>
+        <div class="block">
+            <img src="/image/Minecraft.png" alt="图片 3">
+            <h2>Minecraft</h2>
+            <p></p>
+        </div>
+        <div class="block">
+            <img src="/image/pigurou.jpg" alt="图片 4">
+            <h2>Phigros</h2>
+            <p>还是一个没入门的小登 ^w^</p>
+        </div>
+    </div>
+    <ul id="nav-vertical">
+        <li><a href="like.html">喜</a></li>
+        <li><a href="excerpt.html">录</a></li>
+        <li><a href="../index.html">镜</a></li>
+    </ul>
+</body>
+</html>
