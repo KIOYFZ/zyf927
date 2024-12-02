@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('../image/The Best.jpg');
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+            font-family: Arial, sans-serif; 
+            min-height: 100vh;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            position: relative;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 20px; 
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px; 
+            width: 100%;
+            z-index: 1;
+        }
+
+        .block {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+
+        .block img {
+            width: 100%;
+            height: auto; 
+        }
+
+        .block:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .back-button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+<body>
+
+    <button class="back-button" onclick="window.history.back()">返回</button>
+
+    <div class="container">
+        <div class="block">
+            <img src="../image/NEKO.jpg" alt="图片 1">
+        </div>
+        <div class="block">
+            <img src="../image/P1.jpg" alt="图片 2">
+        </div>
+        <div class="block">
+            <img src="../image/P2.jpg" alt="图片 3">
+        </div>
+        <div class="block">
+            <img src="../image/P3.jpg" alt="图片 4">
+        </div>
+        <div class="block">
+            <img src="../image/P7.jpg" alt="图片 9">
+        </div>
+        <div class="block">
+            <img src="../image/P8.jpg" alt="图片 10">
+        </div>
+        <div class="block">
+            <img src="../image/P12.jpg" alt="图片 11">
+        </div>
+        <div class="block">
+            <img src="../image/P4.jpg" alt="图片 12">
+        </div>
+    </div>
+
+    <script>
+        // 返回上一页面的功能
+        function goBack() {
+            window.history.back();  // 返回上一页面
+        }
+    </script>
+
+
+</body>
+</html>
