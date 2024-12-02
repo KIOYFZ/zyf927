@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>录</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+            height: 100vh; 
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../image/光1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            z-index: -1; 
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            z-index: 1; 
+        }
+
+        .block {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            color: #333;
+        }
+
+        .block:hover {
+            background-color: #f1f1f1;
+        }
+
+        #nav-vertical {
+            position: absolute;
+            top: 40px;
+            right: 10px; 
+            display: flex;
+            list-style: none;
+            flex-direction: column; 
+            align-items: flex-start; 
+            background-color: rgb(242, 243, 244);
+            box-shadow: 20px 40px 40px #cbcaca;
+            border-radius: 10px;
+            padding: 10px;
+            z-index: 10; 
+        }
+
+
+        #nav-vertical li {
+            margin-bottom: 15px; 
+        }
+
+        #nav-vertical li a {
+            padding: 15px 30px;
+            font: 500 24px 'STHupo', sans-serif;
+            color: rgb(70, 100, 180);
+            text-decoration: none;
+            display: inline-block;
+            border: none;
+            outline: none;
+            position: relative;
+            z-index: 3;
+            transition: background-color 0.3s ease;
+        }
+
+        #nav-vertical li a:hover {
+            background-color: rgba(70, 100, 180, 0.1);
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">人总是为了过去寻求最优解，殊不知，“昨天的太阳，晒不干今天的衣裳”。</div>
+        <div class="block">“成熟是一种明亮而不刺眼的光辉，一种圆润而不腻耳的音响，一种不再需要对别人察言观色的从容，一种终于停止向周围申诉求告的大气，一种不理会哄闹的微笑，一种洗刷了偏激的淡漠，一种无需声张的厚实，一种并不陡峭的高度。”——《文化苦旅-黄州突围》</div>
+        <div class="block">“大诗人在这里用泥土和石块写诗，把笔墨吟诵交给小诗人。他自己的诗句，只是躲在水草间、石缝里掩口而笑，绝不出声，以防小诗人听到了颓然废笔。”——《文化苦旅-杭州宣言》</div>
+        <div class="block">“模仿的热闹只能是单调。”——《文化苦旅-莫高窟》</div>
+        <div class="block">“真正的快乐不可能重复，就像真正的人性容不得刻板。”——《文化苦旅-莫高窟》</div>
+        <div class="block">“水，看似柔顺无骨，却能变得气势滚滚，波涌浪叠，无比强大；看似无色无味，却能挥洒出茫茫绿野，累累硕果，万紫千红；看似自处低下，却能蒸腾九霄，为云为雨，为虹为霞……”——《文化苦旅-都江堰》</div>
+        <div class="block">“拜水都江堰，问道青城山。”——《文化苦旅-都江堰》</div>
+        <div class="block">“一个风云数百年的朝代，总是以一群强者英武的雄姿开头，而打下最后一个句点的，却常常是一些文质彬彬的凄怨灵魂。”——《文化苦旅-山庄背影》</div>
+        <div class="block">《骆驼祥子》里有一段话：“这世间的真话本就不多，一个女子的脸红，胜过一大段对白。”可后来有了胭脂， 便分不清是真情还是假意。</div>
+        <div class="block">“孤独是致死的疾病。”——《狼与香辛料》</div>
+    </div>
+    <ul id="nav-vertical">
+        <li><a href="like.html">喜</a></li>
+        <li><a href="../index.html">镜</a></li>
+        <li><a href="game.html">游</a></li>
+    </ul>
+</body>
+</html>
